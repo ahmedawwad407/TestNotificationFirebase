@@ -26,7 +26,6 @@ import java.io.UnsupportedEncodingException;
 public class loginActvtity extends AppCompatActivity {
     RequestQueue requestQueue;
     EditText email,password;
-    String passwordSignUp,emailSignUp;
     Button signInButton,goToAddOrUpdateToken;
 
     @Override
@@ -38,25 +37,10 @@ public class loginActvtity extends AppCompatActivity {
         password=(EditText)findViewById(R.id.password);
         signInButton=(Button) findViewById(R.id.signIn);
         goToAddOrUpdateToken=(Button) findViewById(R.id.GoToAddOrUpdateToken);
-//        passwordSignUp =getIntent().getStringExtra("password");
-//        emailSignUp =getIntent().getStringExtra("email");
 
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (email.getText().toString() !=  emailSignUp){
-//                    Toast.makeText(getApplicationContext(),"email failed",Toast.LENGTH_LONG).show();
-//                }else if(password.getText().toString() != passwordSignUp){
-//                    Toast.makeText(getApplicationContext(),"password failed",Toast.LENGTH_LONG).show();
-//                } else {
-//                    String data="{"+
-//                            "\"email\""       + ":"+  "\""+ email.getText().toString() +"\","+
-//                            "\"password\""    + ":"+   "\""+ password.getText().toString() +"\""+
-//                            "}";
-//                    // post method
-//                    Submit(data);
-//                }
-
                 String data="{"+
                             "\"email\""       + ":"+  "\""+ email.getText().toString() +"\","+
                             "\"password\""    + ":"+   "\""+ password.getText().toString() +"\""+

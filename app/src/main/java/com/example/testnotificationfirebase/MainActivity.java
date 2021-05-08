@@ -55,10 +55,6 @@ public class MainActivity extends AppCompatActivity {
                         "\"password\""    + ":"+   "\""+password.getText().toString()+"\""+
                         "}";
                 Submit(data);
-                Intent i =new Intent(getApplicationContext(),loginActvtity.class);
-                i.putExtra("email",email.getText().toString());
-                i.putExtra("password",password.getText().toString());
-                startActivity(i);
             }
         });
 
